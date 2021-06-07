@@ -4,7 +4,7 @@ Official implementation of **Less is More: Pay Less Attention in Vision Transfor
 
 
 
-![](.github/paper.png)
+![](.github/lit.png)
 
 
 
