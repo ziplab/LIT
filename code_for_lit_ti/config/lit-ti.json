@@ -1,0 +1,10 @@
+{
+  "model": "lit_ti",
+  "batch_size": 32,
+  "num_workers": 10,
+  "epochs": 300,
+  "data_path": "/data1/downloads/datasets/imagenet",
+  "exp_name": "lit_ti",
+  "data_set": "IMNET",
+  "dconv_lr_ratio": 0.01
+}

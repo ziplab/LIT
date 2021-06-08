@@ -1,0 +1,14 @@
+MODEL:
+  TYPE: lit
+  NAME: lit_medium
+  DROP_PATH_RATE: 0.3
+  OFFSET_LR_MULTI: 0.01
+  LIT:
+    EMBED_DIM: 96
+    DEPTHS: [ 2, 2, 18, 2 ]
+    NUM_HEADS: [ 3, 6, 12, 24 ]
+DATA:
+  NUM_WORKERS: 10
+  BATCH_SIZE: 128
+  DATA_PATH: /data1/downloads/datasets/imagenet
+  DATASET: imagenet
