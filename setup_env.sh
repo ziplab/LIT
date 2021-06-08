@@ -29,7 +29,7 @@ echo "Build Deformable Convolution"
 cd code_for_lit_s_m_b/mm_modules/DCN
 python setup.py build install
 
-cd ../../
+cd ../../../
 
 pip install opencv-python==4.4.0.46 termcolor==1.1.0 yacs==0.1.8
 echo "Complete!"
