@@ -2,7 +2,7 @@
 
 Official PyTorch implementation of **Less is More: Pay Less Attention in Vision Transformers**.
 
-By [Zizheng Pan](https://scholar.google.com.au/citations?user=w_VMopoAAAAJ&hl=en), [Bohan Zhuang](https://sites.google.com/view/bohanzhuang), [Haoyu He](https://scholar.google.com/citations?user=aU1zMhUAAAAJ&hl=en), [Jing Liu](https://sites.google.com/view/jing-liu/%E9%A6%96%E9%A1%B5), [Jianfei Cai](https://scholar.google.com/citations?user=N6czCoUAAAAJ&hl=en)
+By [Zizheng Pan](https://scholar.google.com.au/citations?user=w_VMopoAAAAJ&hl=en), [Bohan Zhuang](https://sites.google.com/view/bohanzhuang), [Haoyu He](https://scholar.google.com/citations?user=aU1zMhUAAAAJ&hl=en), [Jing Liu](https://sites.google.com/view/jing-liu/%E9%A6%96%E9%A1%B5) and [Jianfei Cai](https://scholar.google.com/citations?user=N6czCoUAAAAJ&hl=en).
 
 
 
