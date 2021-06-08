@@ -14,6 +14,18 @@ In our [paper](https://arxiv.org/abs/2105.14217), we present a novel Less attent
 
 
 
+If you use this code for a paper please cite:
+
+```
+@article{pan2021less,
+  title={Less is More: Pay Less Attention in Vision Transformers},
+  author={Pan, Zizheng and Zhuang, Bohan and He, Haoyu and Liu, Jing and Cai, Jianfei},
+  journal={arXiv preprint arXiv:2105.14217},
+  year={2021}
+}
+```
+
+
 ## Usage
 
 First, clone this repository.
@@ -85,19 +97,6 @@ In our implementation, we have different training strategies for LIT-Ti and othe
 For LIT-Ti, please refer to [code_for_lit_ti](https://github.com/MonashAI/LIT/tree/main/code_for_lit_ti).
 
 For LIT-S, LIT-M, LIT-B, please refer to [code_for_lit_s_m_b](https://github.com/MonashAI/LIT/tree/main/code_for_lit_s_m_b).
-
-
-
-If you use this code for a paper please cite:
-
-```
-@article{pan2021less,
-  title={Less is More: Pay Less Attention in Vision Transformers},
-  author={Pan, Zizheng and Zhuang, Bohan and He, Haoyu and Liu, Jing and Cai, Jianfei},
-  journal={arXiv preprint arXiv:2105.14217},
-  year={2021}
-}
-```
 
 
 
