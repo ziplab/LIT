@@ -80,9 +80,11 @@ We provide baseline LIT models pretrained on ImageNet 2012.
 
 ## Training and Evaluation
 
-For LIT-Ti, please refer to `code_for_lit_ti` for more details.
+In our implementation, we have different training strategies for LIT-Ti and other LIT models. Therefore, we provide two codebases. 
 
-For LIT-S, LIT-M, LIT-B, please refer to `code_for_lit_s_m_b` for more details.
+For LIT-Ti, please refer to [code_for_lit_ti](https://github.com/MonashAI/LIT/tree/main/code_for_lit_ti).
+
+For LIT-S, LIT-M, LIT-B, please refer to [code_for_lit_s_m_b](https://github.com/MonashAI/LIT/tree/main/code_for_lit_s_m_b).
 
 
 
@@ -108,3 +110,4 @@ This repository is released under the Apache 2.0 license as found in the [LICENS
 ## Acknowledgement
 
 This repository has adopted codes from [DeiT](https://github.com/facebookresearch/deit), [PVT](https://github.com/whai362/PVT) and [Swin](https://github.com/microsoft/Swin-Transformer), we thank the authors for their open-sourced code.
+

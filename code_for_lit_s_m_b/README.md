@@ -1,6 +1,6 @@
 # Less is More: Pay Less Attention in Vision Transformers
 
-Training and Evaluation code for LIT-S, LIT-M and LIT-B.
+Training and evaluation code for LIT-S, LIT-M and LIT-B.
 
 
 
