@@ -63,7 +63,7 @@ Accuracy of the network on the 50000 test images: 83.4%
 
 | Model | Params (M) | FLOPs (G) | Top-1 Acc. (%) | Model                                                        | Log                                                          |
 | ----- | ---------- | --------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| LIT-S | 27         | 4.1       | 81.5           | [model](https://drive.google.com/file/d/1WbXspSpUFmiFEeJov4LNWEOLlgUO6eKs/view?usp=sharing) | [log](https://gist.github.com/MonashAI/1cfe7dc8474bb8d0537e160cc9cea971) |
-| LIT-M | 48         | 8.6       | 83.0           | [model](https://drive.google.com/file/d/1HYJLmKSYO5rgGWPynzEMEG_TYEqFA0oy/view?usp=sharing) | [log](https://gist.github.com/MonashAI/8e6d37dbfd29cb1a061329b4ef6b1025) |
-| LIT-B | 86         | 15.0      | 83.4           | [model](https://drive.google.com/file/d/1EX2CbCVUbc3IVFWdlnRoh7GBWov91iXb/view?usp=sharing) | [log](https://gist.github.com/MonashAI/17321a6b19ebabd5c2956c7d2019b237) |
+| LIT-S | 27         | 4.1       | 81.5           | [google drive](https://drive.google.com/file/d/1WbXspSpUFmiFEeJov4LNWEOLlgUO6eKs/view?usp=sharing)/[github](https://github.com/MonashAI/LIT/releases/download/v1.0/lit_s.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v1.0/log_rank0_lit_small.txt) |
+| LIT-M | 48         | 8.6       | 83.0           | [google drive](https://drive.google.com/file/d/1HYJLmKSYO5rgGWPynzEMEG_TYEqFA0oy/view?usp=sharing)/[github](https://github.com/MonashAI/LIT/releases/download/v1.0/lit_m.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v1.0/log_rank0_lit_medium.txt) |
+| LIT-B | 86         | 15.0      | 83.4           | [google drive](https://drive.google.com/file/d/1EX2CbCVUbc3IVFWdlnRoh7GBWov91iXb/view?usp=sharing)/[github](https://github.com/MonashAI/LIT/releases/download/v1.0/lit_b.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v1.0/log_rank0_lit_base.txt) |
 

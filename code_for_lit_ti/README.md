@@ -53,7 +53,7 @@ Accuracy of the network on the 50000 test images: 81.1%
 
 | Model  | Params (M) | FLOPs (G) | Top-1 Acc. (%) | Model                                                        | Log                                                          |
 | ------ | ---------- | --------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| LIT-Ti | 19         | 3.6       | 81.1           | [model](https://drive.google.com/file/d/19X3u-0BtXXZRlWZeSe5e-Z0ocS6rWCFb/view?usp=sharing) | [log](https://gist.github.com/MonashAI/cc0f1f22d5a18dee5cff2fd1420a29b2) |
+| LIT-Ti | 19         | 3.6       | 81.1           | [google drive](https://drive.google.com/file/d/19X3u-0BtXXZRlWZeSe5e-Z0ocS6rWCFb/view?usp=sharing)/[github](https://github.com/MonashAI/LIT/releases/download/v1.0/lit_ti.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v1.0/log_lit_ti.txt) |
 
 
 
