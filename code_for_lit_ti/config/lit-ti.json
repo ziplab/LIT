@@ -1,6 +1,6 @@
 {
   "model": "lit_ti",
-  "batch_size": 32,
+  "batch_size": 128,
   "num_workers": 10,
   "epochs": 300,
   "data_path": "/data1/downloads/datasets/imagenet",

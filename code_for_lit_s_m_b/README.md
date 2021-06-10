@@ -32,6 +32,8 @@ To train LIT-B:
 bash scripts/lit-b.sh [GPUs] 
 ```
 
+**Note:** We use a total batch size of 1024 for all experiments on ImageNet. Therefore, you may want to use a different batch size by editing `BATCH_SIZE` in `configs/*.yaml`. For example, by setting `BATCH_SIZE` to 64 and training with 8 GPUs, your total batch size is 512.
+
 
 
 ## Evaluation

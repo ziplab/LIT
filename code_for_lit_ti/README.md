@@ -20,7 +20,7 @@ To train LIT-Ti, run
 bash scripts/train_lit.sh [GPUs]
 ```
 
-You can set a different batch size by editing `batch_size` in `config/lit-ti.json`. 
+**Note:** We use a total batch size of 1024 for all experiments on ImageNet. Therefore, you may want to use a different batch size by editing `batch_size` in `config/lit-ti.json`. For example, by setting `batch_size` to 64 and training with 8 GPUs, your total batch size is 512.
 
 
 
