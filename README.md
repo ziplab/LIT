@@ -53,7 +53,7 @@ bash setup_env.sh /home/anaconda3 lit
 
 ## Image Classification on ImageNet
 
-We provide baseline LIT models pretrained on ImageNet-1K. For training and evaluation code, please refer to [classification]().
+We provide baseline LIT models pretrained on ImageNet-1K. For training and evaluation code, please refer to [classification](https://github.com/MonashAI/LIT/tree/main/classification).
 
 | Name   | Params (M) | FLOPs (G) | Top-1 Acc. (%) | Model                                                        | Log                                                          |
 | ------ | ---------- | --------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -67,7 +67,7 @@ We provide baseline LIT models pretrained on ImageNet-1K. For training and evalu
 
 ## Object Detection on COCO
 
-For training and evaluation code, please refer to [detection]().
+For training and evaluation code, please refer to [detection](https://github.com/MonashAI/LIT/tree/main/detection).
 
 
 ### RetinaNet
@@ -89,7 +89,7 @@ For training and evaluation code, please refer to [detection]().
 
 ## Semantic Segmentation on ADE20K
 
-For training and evaluation code, please refer to [segmentation]().
+For training and evaluation code, please refer to [segmentation](https://github.com/MonashAI/LIT/tree/main/segmentation).
 
 
 ### Semantic FPN

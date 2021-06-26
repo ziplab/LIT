@@ -7,7 +7,7 @@ This repo contains the supported code and configuration files to reproduce objec
 ## Usage
 
 ### Installation
-1. Make sure you have created your environment with our provide [scripts](). We recommend you create a new environment for experiments with object detection.
+1. Make sure you have created your environment with our provide [scripts](https://github.com/MonashAI/LIT/blob/main/setup_env.sh). We recommend you create a new environment for experiments with object detection.
 
    ```bash
    # Suppose you already have an env for training LIT on ImageNet.
@@ -23,7 +23,7 @@ This repo contains the supported code and configuration files to reproduce objec
    ln -s [path/to/coco] data/
    ```
 
-4. Download our [pretrained weights]() on ImageNet and move the weights under `pretrained/`.
+4. Download our [pretrained weights](https://github.com/MonashAI/LIT/tree/main/classification) on ImageNet and move the weights under `pretrained/`.
 
 
 

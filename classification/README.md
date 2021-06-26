@@ -49,9 +49,9 @@ We provide baseline LIT models pretrained on ImageNet 2012.
 
 In our implementation, we have different training strategies for LIT-Ti and other LIT models. Therefore, we provide two codebases. 
 
-For LIT-Ti, please refer to [code_for_lit_ti](https://github.com/MonashAI/LIT/tree/main/code_for_lit_ti).
+For LIT-Ti, please refer to [code_for_lit_ti](https://github.com/MonashAI/LIT/tree/main/classification/code_for_lit_ti).
 
-For LIT-S, LIT-M, LIT-B, please refer to [code_for_lit_s_m_b](https://github.com/MonashAI/LIT/tree/main/code_for_lit_s_m_b).
+For LIT-S, LIT-M, LIT-B, please refer to [code_for_lit_s_m_b](https://github.com/MonashAI/LIT/tree/main/classification/code_for_lit_s_m_b).
 
 
 
