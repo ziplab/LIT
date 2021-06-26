@@ -3,6 +3,7 @@
 This repo contains the supported code and configuration files to reproduce semantic segmentation results of [LIT](https://arxiv.org/abs/2105.14217). It is based on [mmsegmentation](https://github.com/open-mmlab/mmsegmentation).
 
 
+
 ## Usage
 
 ### Installation
@@ -69,10 +70,10 @@ tools/dist_train.sh configs/lit/lit_ti_fpn_r50_512x512_80k_ade20k.py 8 --options
 
 ### Semantic FPN
 
-| Backbone | Params (M) | Iters | mIoU | Config | Model | Log  |
-| -------- | ---------- | ----- | ---- | ------ | ----- | ---- |
-| LIT-Ti   | 24         | 8k    | 41.3 |        |       |      |
-| LIT-S    | 32         | 8k    | 41.7 |        |       |      |
+| Backbone | Params (M) | Iters | mIoU | Config                                                       | Model                                                        | Log                                                          |
+| -------- | ---------- | ----- | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| LIT-Ti   | 24         | 8k    | 41.3 | [config](https://github.com/MonashAI/LIT/blob/main/segmentation/configs/lit/lit_ti_fpn_r50_512x512_80k_ade20k.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/sem_fpn_lit_ti.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/sem_fpn_lit_ti_log.json) |
+| LIT-S    | 32         | 8k    | 41.7 | [config](https://github.com/MonashAI/LIT/blob/main/segmentation/configs/lit/lit_s_fpn_r50_512x512_80k_ade20k.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/sem_fpn_lit_s.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/sem_fpn_lit_s_log.json) |
 
 
 

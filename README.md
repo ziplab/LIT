@@ -53,7 +53,7 @@ bash setup_env.sh /home/anaconda3 lit
 
 ## Image Classification on ImageNet
 
-We provide baseline LIT models pretrained on ImageNet 2012. For training and evaluation code, please refer to [classification]().
+We provide baseline LIT models pretrained on ImageNet-1K. For training and evaluation code, please refer to [classification]().
 
 | Name   | Params (M) | FLOPs (G) | Top-1 Acc. (%) | Model                                                        | Log                                                          |
 | ------ | ---------- | --------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -72,18 +72,18 @@ For training and evaluation code, please refer to [detection]().
 
 ### RetinaNet
 
-| Backbone | Params (M) | Lr schd | box mAP | Config | Model | Log  |
-| -------- | ---------- | ------- | ------- | ------ | ----- | ---- |
-| LIT-Ti   | 30         | 1x      | 41.6    |        |       |      |
-| LIT-S    | 39         | 1x      | 41.6    |        |       |      |
+| Backbone | Params (M) | Lr schd | box mAP | Config                                                       | Model                                                        | Log                                                          |
+| -------- | ---------- | ------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| LIT-Ti   | 30         | 1x      | 41.6    | [config](https://github.com/MonashAI/LIT/blob/main/detection/configs/lit/retinanet_lit_ti_fpn_1x_coco.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/retina_lit_ti.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/retina_lit_ti.json) |
+| LIT-S    | 39         | 1x      | 41.6    | [config](https://github.com/MonashAI/LIT/blob/main/detection/configs/lit/retinanet_lit_s_fpn_1x_coco.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/retina_lit_s.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/retina_lit_s.json) |
 
 
 ### Mask R-CNN
 
-| Backbone | Params (M) | Lr schd | box mAP | mask mAP | Config | Model | Log  |
-| -------- | ---------- | ------- | ------- | -------- | ------ | ----- | ---- |
-| LIT-Ti   | 40         | 1x      | 42.0    | 39.1     |        |       |      |
-| LIT-S    | 48         | 1x      | 42.9    | 39.6     |        |       |      |
+| Backbone | Params (M) | Lr schd | box mAP | mask mAP | Config                                                       | Model                                                        | Log                                                          |
+| -------- | ---------- | ------- | ------- | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| LIT-Ti   | 40         | 1x      | 42.0    | 39.1     | [config](https://github.com/MonashAI/LIT/blob/main/detection/configs/lit/mask_rcnn_lit_ti_fpn_1x_coco.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/mask_rcnn_lit_ti.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/mask_rcnn_lit_ti.json) |
+| LIT-S    | 48         | 1x      | 42.9    | 39.6     | [config](https://github.com/MonashAI/LIT/blob/main/detection/configs/lit/mask_rcnn_lit_s_fpn_1x_coco.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/mask_rcnn_lit_s.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/mask_rcnn_lit_s.json) |
 
 
 
@@ -94,10 +94,10 @@ For training and evaluation code, please refer to [segmentation]().
 
 ### Semantic FPN
 
-| Backbone | Params (M) | Iters | mIoU | Config | Model | Log  |
-| -------- | ---------- | ----- | ---- | ------ | ----- | ---- |
-| LIT-Ti   | 24         | 8k    | 41.3 |        |       |      |
-| LIT-S    | 32         | 8k    | 41.7 |        |       |      |
+| Backbone | Params (M) | Iters | mIoU | Config                                                       | Model                                                        | Log                                                          |
+| -------- | ---------- | ----- | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| LIT-Ti   | 24         | 8k    | 41.3 | [config](https://github.com/MonashAI/LIT/blob/main/segmentation/configs/lit/lit_ti_fpn_r50_512x512_80k_ade20k.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/sem_fpn_lit_ti.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/sem_fpn_lit_ti_log.json) |
+| LIT-S    | 32         | 8k    | 41.7 | [config](https://github.com/MonashAI/LIT/blob/main/segmentation/configs/lit/lit_s_fpn_r50_512x512_80k_ade20k.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/sem_fpn_lit_s.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/sem_fpn_lit_s_log.json) |
 
 
 

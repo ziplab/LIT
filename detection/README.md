@@ -67,18 +67,18 @@ tools/dist_train.sh configs/lit/mask_rcnn_lit_ti_fpn_1x_coco.py 8 --cfg-options 
 
 ### RetinaNet
 
-| Backbone | Params (M) | Lr schd | box mAP | config | Model | Log  |
-| -------- | ---------- | ------- | ------- | ------ | ----- | ---- |
-| LIT-Ti   | 30         | 1x      | 41.6    |        |       |      |
-| LIT-S    | 39         | 1x      | 41.6    |        |       |      |
+| Backbone | Params (M) | Lr schd | box mAP | Config                                                       | Model                                                        | Log                                                          |
+| -------- | ---------- | ------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| LIT-Ti   | 30         | 1x      | 41.6    | [config](https://github.com/MonashAI/LIT/blob/main/detection/configs/lit/retinanet_lit_ti_fpn_1x_coco.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/retina_lit_ti.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/retina_lit_ti.json) |
+| LIT-S    | 39         | 1x      | 41.6    | [config](https://github.com/MonashAI/LIT/blob/main/detection/configs/lit/retinanet_lit_s_fpn_1x_coco.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/retina_lit_s.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/retina_lit_s.json) |
 
 
 ### Mask R-CNN
 
-| Backbone | Params (M) | Lr schd | box mAP | mask mAP | config | Model | Log  |
-| -------- | ---------- | ------- | ------- | -------- | ------ | ----- | ---- |
-| LIT-Ti   | 40         | 1x      | 42.0    | 39.1     |        |       |      |
-| LIT-S    | 48         | 1x      | 42.9    | 39.6     |        |       |      |
+| Backbone | Params (M) | Lr schd | box mAP | mask mAP | Config                                                       | Model                                                        | Log                                                          |
+| -------- | ---------- | ------- | ------- | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| LIT-Ti   | 40         | 1x      | 42.0    | 39.1     | [config](https://github.com/MonashAI/LIT/blob/main/detection/configs/lit/mask_rcnn_lit_ti_fpn_1x_coco.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/mask_rcnn_lit_ti.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/mask_rcnn_lit_ti.json) |
+| LIT-S    | 48         | 1x      | 42.9    | 39.6     | [config](https://github.com/MonashAI/LIT/blob/main/detection/configs/lit/mask_rcnn_lit_s_fpn_1x_coco.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/mask_rcnn_lit_s.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/mask_rcnn_lit_s.json) |
 
 
 
