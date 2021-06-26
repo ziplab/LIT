@@ -40,7 +40,7 @@ tools/dist_test.sh <CONFIG_FILE> <SEG_CHECKPOINT_FILE> <GPU_NUM> --eval mIoU
 For example, to evaluate a Semantic FPN model with a `lit-ti` backbone, run:
 
 ```bash
-tools/dist_test.sh configs/lit/lit_ti_fpn_r50_512x512_80k_ade20k.py pretrained/lit_ti.pth 1 --eval mIoU
+tools/dist_test.sh configs/lit/lit_ti_fpn_r50_512x512_80k_ade20k.py [path/to/checkpoint] 1 --eval mIoU
 ```
 
 

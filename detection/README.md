@@ -39,7 +39,7 @@ tools/dist_test.sh <CONFIG_FILE> <DET_CHECKPOINT_FILE> <GPU_NUM> --eval bbox seg
 For example, to evaluate mask-rcnn model with a lit-ti backbone, run:
 
 ```bash
-tools/dist_test.sh configs/lit/mask_rcnn_lit_ti_fpn_1x_coco.py 1 --eval bbox segm
+tools/dist_test.sh configs/lit/mask_rcnn_lit_ti_fpn_1x_coco.py 1 [path/to/checkpoint] --eval bbox segm
 ```
 
 
