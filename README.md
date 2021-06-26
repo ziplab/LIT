@@ -26,6 +26,7 @@ If you use this code for a paper please cite:
 ```
 
 
+
 ## Usage
 
 First, clone this repository.
@@ -38,7 +39,7 @@ Next, create a conda virtual environment.
 
 ```bash
 # Make sure you have a NVIDIA GPU.
-cd LIT/
+cd LIT/classification
 bash setup_env.sh [conda_install_path] [env_name]
 
 # For example
@@ -49,37 +50,10 @@ bash setup_env.sh /home/anaconda3 lit
 
 
 
-## Data Preparation
 
-Download the ImageNet 2012 dataset from [here](http://image-net.org/), and prepare the dataset based on this [script](https://gist.github.com/BIGBALLON/8a71d225eff18d88e469e6ea9b39cef4). The file structure should look like:
+## Image Classification on ImageNet
 
-```bash
-imagenet
-├── train
-│   ├── class1
-│   │   ├── img1.jpeg
-│   │   ├── img2.jpeg
-│   │   └── ...
-│   ├── class2
-│   │   ├── img3.jpeg
-│   │   └── ...
-│   └── ...
-└── val
-    ├── class1
-    │   ├── img4.jpeg
-    │   ├── img5.jpeg
-    │   └── ...
-    ├── class2
-    │   ├── img6.jpeg
-    │   └── ...
-    └── ...
-```
-
-
-
-## Model Zoo
-
-We provide baseline LIT models pretrained on ImageNet 2012.
+We provide baseline LIT models pretrained on ImageNet 2012. For training and evaluation code, please refer to [classification]().
 
 | Name   | Params (M) | FLOPs (G) | Top-1 Acc. (%) | Model                                                        | Log                                                          |
 | ------ | ---------- | --------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -90,13 +64,40 @@ We provide baseline LIT models pretrained on ImageNet 2012.
 
 
 
-## Training and Evaluation
 
-In our implementation, we have different training strategies for LIT-Ti and other LIT models. Therefore, we provide two codebases. 
+## Object Detection on COCO
 
-For LIT-Ti, please refer to [code_for_lit_ti](https://github.com/MonashAI/LIT/tree/main/code_for_lit_ti).
+For training and evaluation code, please refer to [detection]().
 
-For LIT-S, LIT-M, LIT-B, please refer to [code_for_lit_s_m_b](https://github.com/MonashAI/LIT/tree/main/code_for_lit_s_m_b).
+
+### RetinaNet
+
+| Backbone | Params (M) | Lr schd | box mAP | Config | Model | Log  |
+| -------- | ---------- | ------- | ------- | ------ | ----- | ---- |
+| LIT-Ti   | 30         | 1x      | 41.6    |        |       |      |
+| LIT-S    | 39         | 1x      | 41.6    |        |       |      |
+
+
+### Mask R-CNN
+
+| Backbone | Params (M) | Lr schd | box mAP | mask mAP | Config | Model | Log  |
+| -------- | ---------- | ------- | ------- | -------- | ------ | ----- | ---- |
+| LIT-Ti   | 40         | 1x      | 42.0    | 39.1     |        |       |      |
+| LIT-S    | 48         | 1x      | 42.9    | 39.6     |        |       |      |
+
+
+
+## Semantic Segmentation on ADE20K
+
+For training and evaluation code, please refer to [segmentation]().
+
+
+### Semantic FPN
+
+| Backbone | Params (M) | Iters | mIoU | Config | Model | Log  |
+| -------- | ---------- | ----- | ---- | ------ | ----- | ---- |
+| LIT-Ti   | 24         | 8k    | 41.3 |        |       |      |
+| LIT-S    | 32         | 8k    | 41.7 |        |       |      |
 
 
 

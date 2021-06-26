@@ -138,3 +138,4 @@ checkpoints/
 *.err
 .vscode/
 *.xml
+*.pth

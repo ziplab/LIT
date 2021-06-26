@@ -26,7 +26,7 @@ echo "Install Tensorboard"
 pip install tensorboard
 
 echo "Build Deformable Convolution"
-cd code_for_lit_s_m_b/mm_modules/DCN
+cd classification/code_for_lit_s_m_b/mm_modules/DCN
 python setup.py build install
 
 cd ../../../
