@@ -101,7 +101,7 @@ For training and evaluation code, please refer to [segmentation](https://github.
 
 
 
-## DTM Visualisation
+## Offsets Visualisation
 
 ![dpm_vis](.github/dpm_vis.jpg)
 

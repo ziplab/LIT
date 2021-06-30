@@ -26,3 +26,4 @@ checkpoints/
 *.err
 .vscode/
 *.xml
+demo/
