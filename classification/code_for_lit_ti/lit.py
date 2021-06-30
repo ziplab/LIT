@@ -117,6 +117,39 @@ class LIT(nn.Module):
         self.num_classes = num_classes
         self.head = nn.Linear(self.embed_dim, num_classes) if num_classes > 0 else nn.Identity()
 
+    def get_all_offsets(self, x):
+        B = x.shape[0]
+
+        # stage 1
+        x, (H, W) = self.patch_embed1(x)
+        x = x + self.pos_embed1
+        x = self.pos_drop1(x)
+        for blk in self.block1:
+            x = blk(x)
+        x = x.reshape(B, H, W, -1).permute(0, 3, 1, 2).contiguous()
+
+        # stage 2
+        x, (H, W), offsets_2 = self.patch_embed2(x, return_offset=True)
+        x = x + self.pos_embed2
+        x = self.pos_drop2(x)
+        for blk in self.block2:
+            x = blk(x)
+        x = x.reshape(B, H, W, -1).permute(0, 3, 1, 2).contiguous()
+
+        # stage 3
+        x, (H, W), offsets_3 = self.patch_embed3(x, return_offset=True)
+        x = x + self.pos_embed3
+        x = self.pos_drop3(x)
+        for blk in self.block3:
+            x = blk(x)
+        x = x.reshape(B, H, W, -1).permute(0, 3, 1, 2).contiguous()
+
+        # stage 4
+        x, (H, W), offsets_4 = self.patch_embed4(x, return_offset=True)
+
+        return [offsets_2.detach().cpu().numpy(), offsets_3.detach().cpu().numpy(), offsets_4.detach().cpu().numpy()]
+
+
     def forward_features(self, x):
         B = x.shape[0]
 

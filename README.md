@@ -101,6 +101,25 @@ For training and evaluation code, please refer to [segmentation](https://github.
 
 
 
+## DTM Visualisation
+
+![dpm_vis](.github/dpm_vis.jpg)
+
+We provide a script for visualising the learned offsets by the proposed deformable token merging modules (DTM). For example,
+
+```bash
+# activate your virtual env
+conda activate lit
+cd classification/code_for_lit_ti
+
+# visualize
+python visualize_offset.py --model lit_ti --resume [path/to/lit_ti.pth] --vis_image visualization/demo.JPEG
+```
+
+The plots will be automatically saved under `visualization/`, with a folder named by the name of the example image.
+
+
+
 ## License
 
 This repository is released under the Apache 2.0 license as found in the [LICENSE](https://github.com/MonashAI/LIT/blob/main/LICENSE) file.

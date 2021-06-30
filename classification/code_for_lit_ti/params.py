@@ -139,6 +139,8 @@ parser.add_argument('--config', default=None,
                     type=str, help='model configuration')
 parser.add_argument('--exp_name', default='deit',
                     type=str, help='model configuration')
+parser.add_argument('--vis_image', default='visualization/n02814860_253.JPEG',
+                    type=str, help='model configuration')
 
 
 args = parser.parse_args()
