@@ -25,6 +25,9 @@ If you use this code for a paper please cite:
 }
 ```
 
+## Updates
+
+- 10/03/2022: Add visualisation code for attention maps in Figure 3.
 
 
 ## Usage
@@ -112,12 +115,49 @@ We provide a script for visualising the learned offsets by the proposed deformab
 conda activate lit
 cd classification/code_for_lit_ti
 
-# visualize
+# visualise
 python visualize_offset.py --model lit_ti --resume [path/to/lit_ti.pth] --vis_image visualization/demo.JPEG
 ```
 
 The plots will be automatically saved under `visualization/`, with a folder named by the name of the example image.
 
+
+## Attention Map Visualisation
+
+We provide our method for visualising the attention maps in Figure 3. To save your time, we also provide the pretrained model for PVT with standard MSA in all stages.
+
+| Name       | Params (M) | FLOPs (G) | Top-1 Acc. (%) | Model  | Log  |
+| ---------- | ---------- | --------- | -------------- | ------ | ---- |
+| PVT w/ MSA | 20         | 8.4       | 80.9           | github | log  |
+
+```bash
+conda activate lit
+cd classification/code_for_lit_ti
+
+# visualise
+# by default, we save the results under 'classification/code_for_lit_ti/attn_results'
+python generate_attention_maps.py --data-path [/path/to/imagenet] --resume [/path/to/pvt_full_msa.pth]
+```
+
+The resulting folder contains the following items,
+
+```
+.
+├── attention_map
+│   ├── stage-0
+│   │   ├── block0
+│   │   │   └── pixel-1260-block-0-head-0.png
+│   │   ├── block1
+│   │   │   └── pixel-1260-block-1-head-0.png
+│   │   └── block2
+│   │       └── pixel-1260-block-2-head-0.png
+│   ├── stage-1
+│   ├── stage-2
+│   └── stage-3
+└── full_msa_eval_maps.npy
+```
+
+where `full_msa_eval_maps.npy` contains the saved attention maps in each block and each stage.  The folder `attention_map` contains the visualisation results.
 
 
 ## License
