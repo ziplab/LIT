@@ -27,7 +27,7 @@ If you use this code for a paper please cite:
 
 ## Updates
 
-- 10/03/2022: Add visualisation code for attention maps in Figure 3.
+- 10/03/2022: Add visualisation code for attention maps in Figure 3. Please refer to [here](https://github.com/zhuang-group/LIT#attention-map-visualisation).
 
 
 ## Usage
@@ -126,9 +126,9 @@ The plots will be automatically saved under `visualization/`, with a folder name
 
 We provide our method for visualising the attention maps in Figure 3. To save your time, we also provide the pretrained model for PVT with standard MSA in all stages.
 
-| Name       | Params (M) | FLOPs (G) | Top-1 Acc. (%) | Model  | Log  |
-| ---------- | ---------- | --------- | -------------- | ------ | ---- |
-| PVT w/ MSA | 20         | 8.4       | 80.9           | github | log  |
+| Name       | Params (M) | FLOPs (G) | Top-1 Acc. (%) | Model                                                        | Log                                                          |
+| ---------- | ---------- | --------- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| PVT w/ MSA | 20         | 8.4       | 80.9           | [github](https://github.com/zhuang-group/LIT/releases/download/v2.1/pvt_full_msa.pth) | [log](https://github.com/zhuang-group/LIT/releases/download/v2.1/log.txt) |
 
 ```bash
 conda activate lit
