@@ -7,7 +7,7 @@ This repo contains the supported code and configuration files to reproduce objec
 ## Usage
 
 ### Installation
-1. Make sure you have created your environment with our provide [scripts](https://github.com/MonashAI/LIT/blob/main/setup_env.sh). We recommend you create a new environment for experiments with object detection.
+1. Make sure you have created your environment with our provide [scripts](https://github.com/ziplab/LIT/blob/main/setup_env.sh). We recommend you create a new environment for experiments with object detection.
 
    ```bash
    # Suppose you already have an env for training LIT on ImageNet.
@@ -23,7 +23,7 @@ This repo contains the supported code and configuration files to reproduce objec
    ln -s [path/to/coco] data/
    ```
 
-4. Download our [pretrained weights](https://github.com/MonashAI/LIT/tree/main/classification) on ImageNet and move the weights under `pretrained/`.
+4. Download our [pretrained weights](https://github.com/ziplab/LIT/tree/main/classification) on ImageNet and move the weights under `pretrained/`.
 
 
 
@@ -69,16 +69,16 @@ tools/dist_train.sh configs/lit/mask_rcnn_lit_ti_fpn_1x_coco.py 8 --cfg-options 
 
 | Backbone | Params (M) | Lr schd | box mAP | Config                                                       | Model                                                        | Log                                                          |
 | -------- | ---------- | ------- | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| LIT-Ti   | 30         | 1x      | 41.6    | [config](https://github.com/MonashAI/LIT/blob/main/detection/configs/lit/retinanet_lit_ti_fpn_1x_coco.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/retina_lit_ti.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/retina_lit_ti.json) |
-| LIT-S    | 39         | 1x      | 41.6    | [config](https://github.com/MonashAI/LIT/blob/main/detection/configs/lit/retinanet_lit_s_fpn_1x_coco.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/retina_lit_s.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/retina_lit_s.json) |
+| LIT-Ti   | 30         | 1x      | 41.6    | [config](https://github.com/ziplab/LIT/blob/main/detection/configs/lit/retinanet_lit_ti_fpn_1x_coco.py) | [github](https://github.com/ziplab/LIT/releases/download/v2.0/retina_lit_ti.pth) | [log](https://github.com/ziplab/LIT/releases/download/v2.0/retina_lit_ti.json) |
+| LIT-S    | 39         | 1x      | 41.6    | [config](https://github.com/ziplab/LIT/blob/main/detection/configs/lit/retinanet_lit_s_fpn_1x_coco.py) | [github](https://github.com/ziplab/LIT/releases/download/v2.0/retina_lit_s.pth) | [log](https://github.com/ziplab/LIT/releases/download/v2.0/retina_lit_s.json) |
 
 
 ### Mask R-CNN
 
 | Backbone | Params (M) | Lr schd | box mAP | mask mAP | Config                                                       | Model                                                        | Log                                                          |
 | -------- | ---------- | ------- | ------- | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| LIT-Ti   | 40         | 1x      | 42.0    | 39.1     | [config](https://github.com/MonashAI/LIT/blob/main/detection/configs/lit/mask_rcnn_lit_ti_fpn_1x_coco.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/mask_rcnn_lit_ti.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/mask_rcnn_lit_ti.json) |
-| LIT-S    | 48         | 1x      | 42.9    | 39.6     | [config](https://github.com/MonashAI/LIT/blob/main/detection/configs/lit/mask_rcnn_lit_s_fpn_1x_coco.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/mask_rcnn_lit_s.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/mask_rcnn_lit_s.json) |
+| LIT-Ti   | 40         | 1x      | 42.0    | 39.1     | [config](https://github.com/ziplab/LIT/blob/main/detection/configs/lit/mask_rcnn_lit_ti_fpn_1x_coco.py) | [github](https://github.com/ziplab/LIT/releases/download/v2.0/mask_rcnn_lit_ti.pth) | [log](https://github.com/ziplab/LIT/releases/download/v2.0/mask_rcnn_lit_ti.json) |
+| LIT-S    | 48         | 1x      | 42.9    | 39.6     | [config](https://github.com/ziplab/LIT/blob/main/detection/configs/lit/mask_rcnn_lit_s_fpn_1x_coco.py) | [github](https://github.com/ziplab/LIT/releases/download/v2.0/mask_rcnn_lit_s.pth) | [log](https://github.com/ziplab/LIT/releases/download/v2.0/mask_rcnn_lit_s.json) |
 
 
 

@@ -8,7 +8,7 @@ This repo contains the supported code and configuration files to reproduce seman
 
 ### Installation
 
-1. Make sure you have created your environment with our provide [scripts](https://github.com/MonashAI/LIT/blob/main/setup_env.sh). We recommend you create a new environment for experiments with semantic segmentation.
+1. Make sure you have created your environment with our provide [scripts](https://github.com/ziplab/LIT/blob/main/setup_env.sh). We recommend you create a new environment for experiments with semantic segmentation.
 
    ```bash
    # Suppose you already have an env for training LIT on ImageNet.
@@ -24,7 +24,7 @@ This repo contains the supported code and configuration files to reproduce seman
    ln -s [path/to/ade20k] data/
    ```
 
-4. Download our [pretrained weights](https://github.com/MonashAI/LIT/tree/main/classification) on ImageNet and move the weights under `pretrained/`.
+4. Download our [pretrained weights](https://github.com/ziplab/LIT/tree/main/classification) on ImageNet and move the weights under `pretrained/`.
 
 
 
@@ -72,8 +72,8 @@ tools/dist_train.sh configs/lit/lit_ti_fpn_r50_512x512_80k_ade20k.py 8 --options
 
 | Backbone | Params (M) | Iters | mIoU | Config                                                       | Model                                                        | Log                                                          |
 | -------- | ---------- | ----- | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| LIT-Ti   | 24         | 8k    | 41.3 | [config](https://github.com/MonashAI/LIT/blob/main/segmentation/configs/lit/lit_ti_fpn_r50_512x512_80k_ade20k.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/sem_fpn_lit_ti.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/sem_fpn_lit_ti_log.json) |
-| LIT-S    | 32         | 8k    | 41.7 | [config](https://github.com/MonashAI/LIT/blob/main/segmentation/configs/lit/lit_s_fpn_r50_512x512_80k_ade20k.py) | [github](https://github.com/MonashAI/LIT/releases/download/v2.0/sem_fpn_lit_s.pth) | [log](https://github.com/MonashAI/LIT/releases/download/v2.0/sem_fpn_lit_s_log.json) |
+| LIT-Ti   | 24         | 8k    | 41.3 | [config](https://github.com/ziplab/LIT/blob/main/segmentation/configs/lit/lit_ti_fpn_r50_512x512_80k_ade20k.py) | [github](https://github.com/ziplab/LIT/releases/download/v2.0/sem_fpn_lit_ti.pth) | [log](https://github.com/ziplab/LIT/releases/download/v2.0/sem_fpn_lit_ti_log.json) |
+| LIT-S    | 32         | 8k    | 41.7 | [config](https://github.com/ziplab/LIT/blob/main/segmentation/configs/lit/lit_s_fpn_r50_512x512_80k_ade20k.py) | [github](https://github.com/ziplab/LIT/releases/download/v2.0/sem_fpn_lit_s.pth) | [log](https://github.com/ziplab/LIT/releases/download/v2.0/sem_fpn_lit_s_log.json) |
 
 
 
